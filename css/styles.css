@@ -206,7 +206,7 @@ padding-bottom: 120px;
     margin-bottom: 8px;
 }
 
-.title-hidden{
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -719,7 +719,20 @@ textarea::placeholder{
 
 .modal-form-check:checked + .modal-check-text::before{
     background-color: var(--filters-color);
+    background-image: url(../images/click.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
 }
+
+/* .modal-form-check:focus +
+.modal-check-text::before {
+    background-color: var(--filters-color);
+    background-image: url(../images/click.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+} */
 
 .modal-check-text{
     
