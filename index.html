@@ -428,7 +428,9 @@
         <div>
           <p class="footer-form-text">Subscribe</p>
           <form class="footer-form">
+            <label for="user_sub"></label>
             <input
+              id="user_sub"
               type="email"
               name="user-email"
               class="footer-form-input"
@@ -448,7 +450,7 @@
     </footer>
 
     <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -457,10 +459,11 @@
         </button>
         <p class="form-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="modal-form-field">
-            <span class="field-text">Name</span>
-            <span class="user-name-container">
+          <div class="modal-form-container">
+            <label for="user_name" class="modal-form-field">Name</label>
+            <span class="user-container">
               <input
+                id="user_name"
                 type="text"
                 name="user-name"
                 class="modal-form-input"
@@ -470,11 +473,10 @@
                 <use href="./images/sprite.svg#icon-name"></use>
               </svg>
             </span>
-          </label>
-          <label class="modal-form-field">
-            <span class="field-text">Phone</span>
-            <span class="user-phone-container">
+            <label for="user_phone" class="modal-form-field">Phone </label>
+            <span class="user-container">
               <input
+                id="user_phone"
                 type="tel"
                 name="user-phone"
                 class="modal-form-input"
@@ -484,11 +486,10 @@
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </span>
-          </label>
-          <label class="modal-form-field">
-            <span class="field-text">Email</span>
-            <span class="user-email-container">
+            <label for="user_email" class="modal-form-field">Email </label>
+            <span class="user-container">
               <input
+                id="user_email"
                 type="email"
                 name="user-email"
                 class="modal-form-input"
@@ -498,16 +499,14 @@
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </span>
-          </label>
-          <label class="modal-form-field">
-            <span class="field-text">Comment</span>
+            <label for="user_message" class="modal-form-field">Comment </label>
             <textarea
+              id="user_message"
               name="user-message"
               placeholder="Text input"
               class="textarea"
             ></textarea>
-          </label>
-
+          </div>
           <label class="modal-check-text">
             I accept the terms and conditions of the&nbsp;
             <a href="" class="modal-check-link"> Privacy Policy</a>
